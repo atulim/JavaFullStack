@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentPane" prefHeight="461.0" prefWidth="689.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" layoutX="225.0" layoutY="160.0" opacity="0.62" prefHeight="31.0" prefWidth="341.0" promptText="Enter your username / उपयोगकर्ता नाम लिखिए" />
+      <TextField fx:id="emailid" alignment="CENTER" layoutX="224.0" layoutY="201.0" opacity="0.62" prefHeight="26.0" prefWidth="342.0" promptText="Enter your email id / ईमेल आईडी लिखिए" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="224.0" layoutY="236.0" opacity="0.62" prefHeight="26.0" prefWidth="342.0" promptText="Enter your password / पासवर्ड लिखिए" />
+      <PasswordField fx:id="passwordconfirm" alignment="CENTER" layoutX="225.0" layoutY="270.0" opacity="0.62" prefHeight="26.0" prefWidth="342.0" promptText="Confirm your password / पासवर्ड दुबारा लिखिए " />
+      <RadioButton fx:id="male" layoutX="285.0" layoutY="317.0" mnemonicParsing="false" selected="true" text="Male" textAlignment="CENTER" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="female" layoutX="398.0" layoutY="317.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$Gender" />
+      <Button fx:id="login" layoutX="569.0" layoutY="77.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: #228B22;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="signup" layoutX="345.0" layoutY="367.0" mnemonicParsing="false" onAction="#signUP" style="-fx-background-color: #2196F3;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="139.0" fitWidth="132.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/375256.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="progress" fitHeight="117.0" fitWidth="132.0" layoutX="321.0" layoutY="382.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/Ellipsis-1s-200px%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="188.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/Resources/Contacts_52px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="22.0" layoutX="188.0" layoutY="198.0" opacity="0.13" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #2D3447;">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/download%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="188.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/Resources/Keyhole%20Shield_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="188.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/E:/Project%20Workspace/Sample/Resources/Resources/Lock%202_64px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="249.0" layoutY="56.0" prefHeight="36.0" prefWidth="91.0" text="Doctor" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="56.0" prefHeight="18.0" prefWidth="132.0" text="Complaint" textFill="#8086ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="56.0" prefHeight="18.0" prefWidth="74.0" text="Portal" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="92.0" prefHeight="18.0" prefWidth="132.0" text="चिकित्सक" textFill="#8086ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="91.0" prefHeight="36.0" prefWidth="91.0" text="शिकायत" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="92.0" prefHeight="18.0" prefWidth="132.0" text=" पोर्टल" textFill="#8086ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="188.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resources/Resources/Gender_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

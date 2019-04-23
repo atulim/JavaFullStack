@@ -67,5 +67,6 @@
             </ImageView>
          </graphic>
       </Button>
+      <Button fx:id="ocrb" layoutX="466.0" layoutY="213.0" mnemonicParsing="false" onAction="#OCRRead" text="Scan the Document" />
    </children>
 </AnchorPane>

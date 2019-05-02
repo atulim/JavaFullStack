@@ -75,7 +75,14 @@ public class SignUpController implements Initializable {
         PauseTransition pt = new PauseTransition();
         pt.setDuration(Duration.seconds(3));
         pt.setOnFinished( e ->{
-          System.out.println("SignUp Successfully");
+          try
+          {
+              loginAction2();
+          }
+          catch(Exception e1)
+          {
+              System.out.println("Exception Detected");
+          }
         });
         pt.play();
 
@@ -105,6 +112,19 @@ public class SignUpController implements Initializable {
         }
 
     }
+
+    public void loginAction2() throws IOException
+    {
+        signup.getScene().getWindow().hide();
+
+        Stage login = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene scene = new Scene(root);
+        login.setScene(scene);
+        login.show();
+        login.setResizable(false);
+    }
+
 
     @FXML
     public void loginAction(ActionEvent ae2) throws IOException

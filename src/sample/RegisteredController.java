@@ -9,23 +9,22 @@ import javafx.scene.layout.AnchorPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class OtherInfoController implements Initializable {
+public class RegisteredController implements Initializable {
 
     @FXML
     private AnchorPane otherAnchor;
 
-    @FXML
-            private Button back1;
 
     AnchorPane info;
 
-   @FXML
-   private Button back;
+    @FXML
+    private Button back;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
     @FXML
     public void backAction(ActionEvent e)
     {

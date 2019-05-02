@@ -11,75 +11,75 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane depthTest="DISABLE" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane depthTest="DISABLE" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <ImageView fitHeight="98.0" fitWidth="102.0" layoutX="42.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="98.0" fitWidth="102.0" layoutX="48.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="file:/E:/Project%20Workspace/Sample/Resources/375256%20(1).png" />
             </image></ImageView>
-        <Label layoutX="253.0" layoutY="43.0" prefHeight="18.0" prefWidth="132.0" text="Complaint" textFill="#8086ff">
+        <Label layoutX="301.0" layoutY="44.0" prefHeight="18.0" prefWidth="132.0" text="Complaint" textFill="#8086ff">
             <font>
-                <Font size="23.0" />
+                <Font size="25.0" />
             </font>
         </Label>
-        <Label layoutX="171.0" layoutY="43.0" prefHeight="36.0" prefWidth="91.0" text="Doctor" textAlignment="CENTER" textFill="WHITE">
+        <Label layoutX="203.0" layoutY="43.0" prefHeight="36.0" prefWidth="91.0" text="Doctor" textAlignment="CENTER" textFill="WHITE">
             <font>
-                <Font size="23.0" />
+                <Font size="25.0" />
             </font>
         </Label>
-        <Label layoutX="371.0" layoutY="43.0" prefHeight="18.0" prefWidth="74.0" text="Portal" textFill="WHITE">
+        <Label layoutX="439.0" layoutY="44.0" prefHeight="18.0" prefWidth="74.0" text="Portal" textFill="WHITE">
             <font>
-                <Font size="23.0" />
+                <Font size="25.0" />
             </font>
         </Label>
-        <Button fx:id="forgotpassword" layoutX="217.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #2D3447;" text="Forgot the password?" textFill="WHITE" underline="true">
+        <Button fx:id="forgotpassword" layoutX="244.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: #2D3447;" text="Forgot the password?" textFill="WHITE" underline="true">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <TextField fx:id="username" alignment="CENTER" layoutX="207.0" layoutY="151.0" opacity="0.62" prefHeight="21.0" prefWidth="175.0" promptText="Username / उपयोगकर्ता नाम" style="-fx-background-color: #2d3447;">
+        <TextField fx:id="username" alignment="CENTER" layoutX="249.0" layoutY="176.0" opacity="0.62" prefHeight="30.0" prefWidth="215.0" promptText="Username / उपयोगकर्ता नाम" style="-fx-background-color: #2d3447;">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font></TextField>
-      <PasswordField fx:id="password" alignment="CENTER" layoutX="207.0" layoutY="200.0" opacity="0.62" prefHeight="21.0" prefWidth="175.0" promptText="Password / पासवर्ड" style="-fx-background-color: #2d3447;">
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="249.0" layoutY="235.0" opacity="0.62" prefHeight="30.0" prefWidth="215.0" promptText="Password / पासवर्ड" style="-fx-background-color: #2d3447;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></PasswordField>
-        <CheckBox fx:id="remember" layoutX="171.0" layoutY="274.0" mnemonicParsing="false" text="Remember me for a month" textFill="WHITE" />
-      <Button fx:id="login" layoutX="422.0" layoutY="267.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #2196F3;" text="Login" textFill="WHITE">
+        <CheckBox fx:id="remember" layoutX="188.0" layoutY="318.0" mnemonicParsing="false" text="Remember me for a month" textFill="WHITE" />
+      <Button fx:id="login" layoutX="437.0" layoutY="311.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #2196F3;" text="Login" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font></Button>
-        <Button fx:id="signup" layoutX="468.0" layoutY="49.0" mnemonicParsing="false" onAction="#SignUp" style="-fx-background-color: #228B22;" text="Sign Up" textFill="WHITE">
+        <Button fx:id="signup" layoutX="582.0" layoutY="46.0" mnemonicParsing="false" onAction="#SignUp" style="-fx-background-color: #228B22;" text="Sign Up" textFill="WHITE">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-      <ImageView fx:id="progress" fitHeight="92.0" fitWidth="229.0" layoutX="189.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="progress" fitHeight="92.0" fitWidth="229.0" layoutX="188.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="file:/E:/Project%20Workspace/Sample/Resources/294-1.gif" />
          </image></ImageView>
-      <Label layoutX="274.0" layoutY="78.0" prefHeight="36.0" prefWidth="91.0" text="शिकायत" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="321.0" layoutY="91.0" prefHeight="36.0" prefWidth="91.0" text="शिकायत" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="23.0" />
+            <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="171.0" layoutY="79.0" prefHeight="18.0" prefWidth="132.0" text="चिकित्सक" textFill="#8086ff">
+      <Label layoutX="188.0" layoutY="91.0" prefHeight="18.0" prefWidth="132.0" text="चिकित्सक" textFill="#8086ff">
          <font>
-            <Font size="23.0" />
+            <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="365.0" layoutY="79.0" prefHeight="18.0" prefWidth="132.0" text=" पोर्टल" textFill="#8086ff">
+      <Label layoutX="447.0" layoutY="91.0" prefHeight="18.0" prefWidth="132.0" text=" पोर्टल" textFill="#8086ff">
          <font>
-            <Font size="23.0" />
+            <Font size="25.0" />
          </font>
       </Label>
-      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="179.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="213.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="file:/E:/Project%20Workspace/Sample/Resources/Resources/Contacts_52px.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="179.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="213.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="file:/E:/Project%20Workspace/Sample/Resources/Resources/Keyhole%20Shield_64px.png" />
          </image>

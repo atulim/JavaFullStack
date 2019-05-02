@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="329.0" prefWidth="730.0" style="-fx-background-color: #015B70;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OtherInfoController">
+<AnchorPane prefHeight="329.0" prefWidth="730.0" style="-fx-background-color: #015B70;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OtherInfoController">
    <children>
-      <Button fx:id="back" contentDisplay="GRAPHIC_ONLY" layoutX="31.0" layoutY="31.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #015B70;" text="Button">
+      <Button fx:id="back" contentDisplay="GRAPHIC_ONLY" layoutX="84.0" layoutY="30.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #015B70;" text="Button">
          <graphic>
             <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -19,8 +19,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <TextArea layoutX="38.0" layoutY="91.0" prefHeight="200.0" prefWidth="563.0" style="-fx-background-color: #85B5AD;" text="This is a JavaFX Project developed by a student of JSSATE Noida, as the fourth year project. This is a &#10;stand alone single page application that can work in remote areas i.e. villages areas and also the &#10;places with no internet application. Also it can be used in web browsers, with the help of a single&#10;java plugin.&#10;&#10;I have made this project by gaining knowledge from various resources such as Oracle Sites, Youtube,&#10;TutorialsPoint etc. and I am grateful to them. I would add various features such as OCR and AI in&#10;future that can be used to scan the english texts and fill them in the fields for people who are unable&#10;to read or write english.&#10;&#10;Kindly review this application and also suggest some changes that I can make. Also I would have used&#10;design libraries but it would make the application due to which I used simple javafx. If you want to add&#10;more graphics, you can use jofoenix or other types of libraries. Also the database has been designed &#10;on MYSQL WorkBench but can use other types of database like AWS etc. Also the project was designed&#10;on Intellij IDE." />
-      <Button fx:id="back1" contentDisplay="GRAPHIC_ONLY" layoutX="530.0" layoutY="31.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #015B70;" text="Button">
+      <TextArea layoutX="95.0" layoutY="90.0" prefHeight="200.0" prefWidth="563.0" style="-fx-background-color: #85B5AD;" text="This is a JavaFX Project developed by a student of JSSATE Noida, as the fourth year project. This is a &#10;stand alone single page application that can work in remote areas i.e. villages areas and also the &#10;places with no internet application. Also it can be used in web browsers, with the help of a single&#10;java plugin.&#10;&#10;I have made this project by gaining knowledge from various resources such as Oracle Sites, Youtube,&#10;TutorialsPoint etc. and I am grateful to them. I would add various features such as OCR and AI in&#10;future that can be used to scan the english texts and fill them in the fields for people who are unable&#10;to read or write english.&#10;&#10;Kindly review this application and also suggest some changes that I can make. Also I would have used&#10;design libraries but it would make the application due to which I used simple javafx. If you want to add&#10;more graphics, you can use jofoenix or other types of libraries. Also the database has been designed &#10;on MYSQL WorkBench but can use other types of database like AWS etc. Also the project was designed&#10;on Intellij IDE." />
+      <Button fx:id="back1" contentDisplay="GRAPHIC_ONLY" layoutX="598.0" layoutY="33.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #015B70;" text="Button">
          <graphic>
             <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -29,27 +29,27 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="247.0" layoutY="12.0" prefHeight="40.0" prefWidth="97.0" text="Other" textFill="#8086ff">
+      <Label layoutX="328.0" layoutY="12.0" prefHeight="40.0" prefWidth="97.0" text="Other" textFill="#8086ff">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="12.0" prefHeight="40.0" prefWidth="97.0" text="Info" textFill="WHITE">
+      <Label layoutX="402.0" layoutY="12.0" prefHeight="40.0" prefWidth="97.0" text="Info" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="247.0" layoutY="50.0" prefHeight="40.0" prefWidth="97.0" text="अन्य " textFill="#fcfcfc">
+      <Label layoutX="328.0" layoutY="49.0" prefHeight="40.0" prefWidth="97.0" text="अन्य " textFill="#fcfcfc">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="308.0" layoutY="50.0" prefHeight="40.0" prefWidth="97.0" text="जानकारी" textFill="#8086ff">
+      <Label layoutX="377.0" layoutY="49.0" prefHeight="40.0" prefWidth="97.0" text="जानकारी" textFill="#8086ff">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="122.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="214.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="file:/E:/Project%20Workspace/Sample/Resources/375256.png" />
          </image>

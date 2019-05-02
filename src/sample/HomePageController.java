@@ -103,23 +103,29 @@ public class HomePageController implements Initializable {
     @FXML
     public void logOut(ActionEvent event) throws IOException
     {
-        btnLogout.getScene().getWindow().hide();
-        Stage login = new Stage();
-
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Boolean answer = ConfirmBox.display("Title","Are you sure you want to logout?");
+        if(answer) {
 
 
+            btnLogout.getScene().getWindow().hide();
+            Stage login = new Stage();
 
-        Scene scene =  new Scene(root);
-        login.setScene(scene);
-        login.show();
-        login.setResizable(false);
+            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+
+            Scene scene = new Scene(root);
+            login.setScene(scene);
+            login.show();
+            login.setResizable(false);
+        }
     }
 
     @FXML
     public void exit(ActionEvent event)
     {
-        Platform.exit();
+        Boolean answer = ConfirmBox.display("Title","Are you sure you want to exit?");
+        if(answer)
+            Platform.exit();
 
     }
 }

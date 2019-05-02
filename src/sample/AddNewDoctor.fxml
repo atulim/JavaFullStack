@@ -9,43 +9,43 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="329.0" prefWidth="624.0" style="-fx-background-color: #015B70;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddNewDoctorController">
+<AnchorPane fx:id="otherAnchor" prefHeight="329.0" prefWidth="730.0" style="-fx-background-color: #015B70;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddNewDoctorController">
    <children>
-      <Label layoutX="266.0" layoutY="27.0" prefHeight="40.0" prefWidth="97.0" text="Add" textFill="#8086ff">
+      <Label layoutX="306.0" layoutY="16.0" prefHeight="40.0" prefWidth="97.0" text="Add" textFill="#8086ff">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="314.0" layoutY="27.0" prefHeight="40.0" prefWidth="55.0" text="New" textFill="WHITE">
+      <Label layoutX="365.0" layoutY="16.0" prefHeight="40.0" prefWidth="55.0" text="New" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="263.0" layoutY="66.0" prefHeight="40.0" prefWidth="45.0" text="नया" textFill="WHITE">
+      <Label layoutX="309.0" layoutY="56.0" prefHeight="40.0" prefWidth="45.0" text="नया" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="369.0" layoutY="27.0" prefHeight="40.0" prefWidth="97.0" text="Doctor" textFill="#8086ff">
+      <Label layoutX="429.0" layoutY="16.0" prefHeight="40.0" prefWidth="97.0" text="Doctor" textFill="#8086ff">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="308.0" layoutY="66.0" prefHeight="40.0" prefWidth="109.0" text="चिकित्सक" textFill="#8086ff">
+      <Label layoutX="355.0" layoutY="56.0" prefHeight="40.0" prefWidth="109.0" text="चिकित्सक" textFill="#8086ff">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="399.0" layoutY="66.0" prefHeight="40.0" prefWidth="55.0" text=" जोड़ें" textFill="WHITE">
+      <Label layoutX="450.0" layoutY="56.0" prefHeight="40.0" prefWidth="55.0" text=" जोड़ें" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="215.0" layoutY="130.0" prefHeight="25.0" prefWidth="261.0" promptText="Doctor's name / चिकित्सक का नाम" />
-      <TextField alignment="CENTER" layoutX="215.0" layoutY="176.0" prefHeight="25.0" prefWidth="261.0" promptText="Doctor's address / चिकित्सक का पता" />
-      <ComboBox layoutX="231.0" layoutY="228.0" prefHeight="25.0" prefWidth="228.0" promptText="Select the city / शहर चुनें" />
-      <ComboBox layoutX="231.0" layoutY="276.0" prefHeight="25.0" prefWidth="228.0" promptText="Select the state / राज्य चुनें" />
-      <ImageView fitHeight="99.0" fitWidth="99.0" layoutX="106.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="name" alignment="CENTER" layoutX="47.0" layoutY="124.0" prefHeight="25.0" prefWidth="261.0" promptText="Doctor's name / चिकित्सक का नाम" />
+      <TextField fx:id="address" alignment="CENTER" layoutX="47.0" layoutY="165.0" prefHeight="25.0" prefWidth="261.0" promptText="Doctor's address / चिकित्सक का पता" />
+      <ComboBox fx:id="city" editable="true" layoutX="47.0" layoutY="204.0" prefHeight="26.0" prefWidth="262.0" promptText="Select the city / शहर चुनें" />
+      <ComboBox fx:id="state" editable="true" layoutX="47.0" layoutY="250.0" prefHeight="26.0" prefWidth="262.0" promptText="Select the state / राज्य चुनें" />
+      <ImageView fitHeight="99.0" fitWidth="99.0" layoutX="142.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="file:/E:/Project%20Workspace/Sample/Resources/375256.png" />
          </image>
@@ -58,7 +58,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="back1" contentDisplay="GRAPHIC_ONLY" layoutX="553.0" layoutY="27.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #015B70;" text="Button">
+      <Button fx:id="back1" contentDisplay="GRAPHIC_ONLY" layoutX="651.0" layoutY="27.0" mnemonicParsing="false" onAction="#backAction" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: #015B70;" text="Button">
          <graphic>
             <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -67,6 +67,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="ocrb" layoutX="466.0" layoutY="213.0" mnemonicParsing="false" onAction="#OCRRead" text="Scan the Document" />
+      <Button fx:id="ocrb" layoutX="360.0" layoutY="263.0" mnemonicParsing="false" onAction="#OCRRead" style="-fx-background-color: #2196F3;" text="Scan the Document" textFill="WHITE" />
+      <TextField fx:id="Complaint" alignment="CENTER" layoutX="344.0" layoutY="124.0" prefHeight="126.0" prefWidth="280.0" promptText="Complaint / शिकायत" />
+      <Button fx:id="submit" layoutX="556.0" layoutY="263.0" mnemonicParsing="false" onAction="#AddDoctor" style="-fx-background-color: #228B22;" text="Submit" textFill="WHITE" />
    </children>
 </AnchorPane>

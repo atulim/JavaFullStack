@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="homeAnchor" prefHeight="329.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+<AnchorPane fx:id="homeAnchor" prefHeight="329.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
    <children>
       <Button alignment="CENTER" contentDisplay="TOP" layoutX="48.0" layoutY="15.0" mnemonicParsing="false" prefHeight="127.0" prefWidth="171.0" style="-fx-background-color: #E6FFFD;" text="Hospitals / अस्पताल">
          <graphic>
@@ -14,7 +14,7 @@
                   <Image url="file:/E:/Project%20Workspace/Sample/Resources/008_010_hospital_clinic_building-512.png" />
                </image></ImageView>
          </graphic></Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="243.0" layoutY="13.0" mnemonicParsing="false" prefHeight="131.0" prefWidth="119.0" style="-fx-background-color: #E6FFFD;" text="Doctor / चिकित्सक">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="269.0" layoutY="15.0" mnemonicParsing="false" prefHeight="131.0" prefWidth="119.0" style="-fx-background-color: #E6FFFD;" text="Doctor / चिकित्सक">
          <graphic>
             <ImageView fitHeight="123.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -22,7 +22,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="50.0" layoutY="165.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="187.0" style="-fx-background-color: #E6FFFD;" text="Blood Bank / रक्त बैंक">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="40.0" layoutY="181.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="187.0" style="-fx-background-color: #E6FFFD;" text="Blood Bank / रक्त बैंक">
          <graphic>
             <ImageView fitHeight="104.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,7 +30,7 @@
                </image></ImageView>
          </graphic>
       </Button>
-      <Button fx:id="otherInfo" alignment="CENTER" contentDisplay="TOP" layoutX="403.0" layoutY="165.0" mnemonicParsing="false" onAction="#otherAction" prefHeight="135.0" prefWidth="175.0" style="-fx-background-color: #E6FFFD;" text="Other Info / अन्य जानकारी">
+      <Button fx:id="otherInfo" alignment="CENTER" contentDisplay="TOP" layoutX="458.0" layoutY="187.0" mnemonicParsing="false" onAction="#otherAction" prefHeight="135.0" prefWidth="175.0" style="-fx-background-color: #E6FFFD;" text="Other Info / अन्य जानकारी">
          <graphic>
             <ImageView fitHeight="105.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -38,7 +38,7 @@
                </image></ImageView>
          </graphic>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="233.0" layoutY="159.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="160.0" style="-fx-background-color: #E6FFFD;" text="City Centres / शहरी केंद्र">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="251.0" layoutY="181.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="175.0" style="-fx-background-color: #E6FFFD;" text="City Centres / शहरी केंद्र">
          <graphic>
             <ImageView fitHeight="101.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -47,9 +47,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="add" alignment="CENTER" contentDisplay="TOP" layoutX="377.0" layoutY="13.0" mnemonicParsing="false" onAction="#addNew" prefHeight="152.0" prefWidth="227.0" style="-fx-background-color: #E6FFFD;" text="Add New Doctor / नया चिकित्सक जोड़ें">
+      <Button fx:id="add" alignment="CENTER" contentDisplay="TOP" layoutX="417.0" layoutY="22.0" mnemonicParsing="false" onAction="#addNew" prefHeight="152.0" prefWidth="280.0" style="-fx-background-color: #E6FFFD;" text="Add New Doctor / नया चिकित्सक जोड़ें">
          <graphic>
-            <ImageView fitHeight="131.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="115.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="file:/E:/Project%20Workspace/Sample/Resources/Doctor_Search-512.png" />
                </image>

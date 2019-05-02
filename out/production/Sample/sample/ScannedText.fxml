@@ -5,6 +5,6 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ScannedTextController">
    <children>
-      <TextField fx:id="listview" accessibleRole="TEXT_AREA" alignment="TOP_LEFT" layoutX="9.0" layoutY="6.0" prefHeight="380.0" prefWidth="580.0" />
+      <TextField fx:id="listview" alignment="TOP_LEFT" layoutX="14.0" layoutY="9.0" prefHeight="382.0" prefWidth="572.0" />
    </children>
 </AnchorPane>
